@@ -1,22 +1,27 @@
-let movie='Kalki';
-let consent=prompt("Want to start game: \n y/n")
-if(consent.toLowerCase()=='y'||consent.toLowerCase()=='yes'){
-let guess=prompt("Guess the movie: ");
-guess=guess.toLowerCase();
-movie=movie.toLowerCase();
-let close=false;
-while(guess!==movie){
-    console.log("Wrong guess....");
-    guess=prompt("Try Again, \n Guess the movie: ");
-    if(guess=='quit'){
-        close=true;
-        break;
+let lists=[];
+let consent=prompt("Do you want to make To-Do's \n Enter y/n ");
+if(consent.toLowerCase()=='y'){
+    while(consent=='y'){
+        let option=prompt("What do you want?\n add/show/delete");
+        switch(option){
+            case "add":
+                let element=prompt("Enter you upcoming work: ");
+                lists.push(element);
+                break;
+            case "show":
+                for(let i=0;i<lists.length;i++){
+                    console.log(i+1,lists[i]);
+                }
+                break;
+            case "delete":
+                let index=prompt("Enter the index of work: ");
+                lists.splice(index);
+                break
+            default:
+                console.log("invalid option")
+
+        }
+        consent=prompt("remain to do?\n y/n")
     }
 }
-if(!close){
-    alert("Congatulation, correct guess....")
-    console.log("Congatulation, correct guess....");
-}
-}else{
-    alert("Okay,\n Just refresh the page. If you want to play... \n\n");
-}
+console.log("Wishing to complete your work...")
