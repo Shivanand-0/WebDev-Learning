@@ -1,27 +1,37 @@
-let lists=[];
-let consent=prompt("Do you want to make To-Do's \n Enter y/n ");
-if(consent.toLowerCase()=='y'){
-    while(consent=='y'){
-        let option=prompt("What do you want?\n add/show/delete");
-        switch(option){
-            case "add":
-                let element=prompt("Enter you upcoming work: ");
-                lists.push(element);
-                break;
-            case "show":
-                for(let i=0;i<lists.length;i++){
-                    console.log(i+1,lists[i]);
-                }
-                break;
-            case "delete":
-                let index=prompt("Enter the index of work: ");
-                lists.splice(index);
-                break
-            default:
-                console.log("invalid option")
-
+let consent=prompt("Ready to play game \n y/n: ");
+if(consent=='y'){
+    let iswin=false;
+    let hint;
+let max=prompt("Enter the max number: ");
+let random=Math.floor(Math.random()*max)+1;
+let guess=prompt("Guess the Number: ");
+while((guess.toLowerCase())!="quit"){
+    if(guess==random){
+        console.log("Congratulation, correct guess..");
+        alert("Congratulation, correct guess..");
+        iswin=true;
+        break;
+    }else{
+        let avg=(parseInt(max)+1)/2;
+        if(Math.abs(random-parseInt(guess))<avg){
+            if(Math.abs(random-parseInt(guess))<5){
+            hint="too close to";
+            }else{
+                hint="close to"; 
+            }
+        }else if(Math.abs(random-parseInt(guess))>avg){
+            hint="far from"
         }
-        consent=prompt("remain to do?\n y/n")
+        guess=prompt(` Wrong guess\n Try Again:\n\n Hints: Previous guess is ${hint} actual number `);
+
     }
 }
-console.log("Wishing to complete your work...")
+
+    consent=prompt("want to quit? \n y/n")
+    if(consent=='y'){
+    alert("Thanks you!")
+    }else{
+        alert("Refresh the page.To restart the game.")
+    }
+
+}
