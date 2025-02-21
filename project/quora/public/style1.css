@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(169, 207, 207);
+}
+
+#logo{
+    color: rgba(181, 11, 11, 0.826);
+}
+#post{
+background-color: burlywood;
+}
+#username{
+    font-style: italic;
+}
