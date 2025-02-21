@@ -1,0 +1,25 @@
+#main-container{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* #item-container{
+}
+#list-ip{
+}
+#enter-btn{} */
+#list-container{
+    background-color: rgba(235, 36, 36, 0.406);
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    border-radius: 5cap;
+    margin-top: -10px;
+}
+.li{
+    display:flex;
+    /* flex-direction: row; */
+    justify-content:space-between ;
+    color: rgb(247, 255, 6);
+}
