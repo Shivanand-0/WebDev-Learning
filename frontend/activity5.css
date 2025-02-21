@@ -1,0 +1,29 @@
+#container{
+    background-color: rgba(28, 150, 150, 0.58);
+    display: flex;
+    justify-content:center;
+}
+#lst-container{
+background-color: rgba(0, 0, 255, 0.112);
+height: auto;
+}
+#c-name{
+    background-color:rgba(0, 0, 255, 0.112);
+    height: 100px;
+    align-content: center;
+}
+a{
+    text-decoration: none ;
+    color: black;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    margin: 0px;
+    height: 90px;;
+}
+button{
+    background-color:  rgba(181, 211, 211, 0.441);
+}
