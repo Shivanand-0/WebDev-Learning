@@ -1,0 +1,58 @@
+*{
+    margin: 0%;
+    padding:0%;
+}
+h1{
+    font-size: 90px;
+    font-weight: 200;
+    color: rgba(43, 77, 9, 0.502);
+    text-decoration:dashed;
+}
+.ImgDiv img,#aboutDiv img{
+    height:100px;
+    width:100px;
+    border:4px solid black;
+    border-radius: 50%;
+}
+#aboutDiv{
+    background-color: rgb(199, 248, 232);
+}
+#aboutDiv h2{
+    font-size: 70px;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.502);
+
+} #aboutDiv p{
+    font-size: 25px;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.703);
+
+}
+#aboutDiv img{
+    width:30px;
+    height:10px;
+    border-radius: 50%;
+}
+
+#recruitDiv{
+    background-color: rgba(216, 152, 132, 0.548);
+}
+#recruitDiv h2{
+    font-size: 70px;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.502);
+
+} #recruitDiv p{
+    font-size: 25px;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.817);
+
+}
+#recruitDiv #reImg{
+    width:200px;
+    height:500px;
+    border-radius:5%;
+    display:flex;
+    align-content:end;
+}
+

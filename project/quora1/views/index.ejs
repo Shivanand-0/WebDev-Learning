@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        #post-body{
+        height: 100px;
+        width:auto;
+        border: 2px solid black;
+        }
+    </style>
+    <title>Quora</title>
+</head>
+<body><%for (let username of users){%>
+    <div id="post">
+        <div id="post-header">
+            <span id="user-logo"><img src="#" alt="logo"></span>
+            <span id="user-data"><%= username%></span>
+            <%if (follow_flag=0){%>
+                <span id="follow-btn"><form action="/follow"><button>Follow</button></form></span>
+            <%}else{%>
+                <span id="follow-btn"><form action="/follow"><button>Unfollow</button></form></span>
+            <%}%>
+        </div>
+        <div id="post-body">
+        </div>
+        <div id="post-footer">
+            <span id="upvote-btn"><button>Upvote(3.5k)</button></span>
+            <span id="downvote-btn"><button>Downvote</button></span>
+            <span id="comment-btn"><button>Comment</button></span>
+        </div>
+    </div> <br><%}%>
+</body>
+</html>

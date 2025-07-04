@@ -1,0 +1,83 @@
+/* body{
+    background-color: wheat;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1{
+    color:red;
+    
+}
+h3{
+    color:black
+}
+p{
+    color: #964B00;
+    line-height: 30px;
+}
+p span{
+    text-decoration: underline;
+}
+h4 a{
+    color: rgb(0,255,0);
+    text-decoration: none;
+}
+button{
+    color: rgb(95, 27, 212);
+    background-color: white;
+}
+textarea{
+    color: #000000;
+} */
+
+/* *{
+    font-family: 'Courier New';
+}
+h1{
+    color:#1b74e4
+}
+#searchbtn{
+    background-color: black;
+    color: white;
+}
+/* .userbtn{
+    background-color:aqua;
+} */
+
+/* 
+*{
+    text-align: center;
+}
+#mainTopic{
+    color:blue
+}
+h1,h3,h5{
+    font-family: Georgia;
+}
+
+.para{
+    color:white;
+    background-color: cornflowerblue;
+}
+div button{
+    color: azure;
+    background-color: purple;
+}
+
+button:hover{
+    color: blue;
+    background-color: yellow;
+}
+
+.para:nth-of-type(2n-1){
+    color:yellow;
+}
+h1::first-letter{
+    color:red;
+}
+
+input[type="checkbox"]:checked + label{
+    color:green;
+} */
+
+
